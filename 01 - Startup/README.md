@@ -48,7 +48,7 @@ Let's go!
     export default Button;
     ```
 
-There's a couple of things of note going on here. - First we're importing `React` so that we can actually create, export, and render our component. - Then we're declaring an `interface`, which in simple terms is a way in TypeScript of describing the structure of an object. In this case it describes which props we can use in our component and what type/types they can be. - Last but not least we create the component, pass the props where they should be used or rendered, and then we export everything.
+    There's a couple of things of note going on here. - First we're importing `React` so that we can actually create, export, and render our component. - Then we're declaring an `interface`, which in simple terms is a way in TypeScript of describing the structure of an object. In this case it describes which props we can use in our component and what type/types they can be. - Last but not least we create the component, pass the props where they should be used or rendered, and then we export everything.
 
 4. If everything has gone according to plan you should be ready to display your Button component. Import it at the top of the `App.tsx` file and then render it like this:
 
@@ -64,11 +64,11 @@ There's a couple of things of note going on here. - First we're importing `React
 
 5. We have a button! :tada: But it's looking kinda bleak. Let's remedy that by adding a bit of CSS. There are a lot of different approaches to styling components in React. We're going to start with plain 'ol vanilla CSS and then move on to something a bit more advanced (and a lot more powerful).
 
-First off, grab the `reset.css` in the `resources` folder and put it into the `src` of your project. Then import it at the top of `index.tsx` in the same way as `index.css`.
+    First off, grab the `reset.css` in the `resources` folder and put it into the `src` of your project. Then import it at the top of `index.tsx` in the same way as `index.css`.
 
-After that you are free to open up the link to the design in Figma and do your best to make your component match the design. Look under "Pages --> Library" for the actual component design as well as the colors used throughout the projects. You'll be reusing these colors a lot so it's a good idea to put them as CSS variables in the `index.css` file.
+    After that you are free to open up the link to the design in Figma and do your best to make your component match the design. Look under "Pages --> Library" for the actual component design as well as the colors used throughout the projects. You'll be reusing these colors a lot so it's a good idea to put them as CSS variables in the `index.css` file.
 
-The project uses the [Inconsolata](https://fonts.google.com/specimen/Inconsolata) font from Google Fonts. Find the font weights you need and load the font in `/public/index.html`.
+    The project uses the [Inconsolata](https://fonts.google.com/specimen/Inconsolata) font from Google Fonts. Find the font weights you need and load the font in `/public/index.html`.
 
 -   :books: Documentation
 
