@@ -21,7 +21,7 @@ Let's go!
                 - index.tsx
     ```
 
-That's some structure for our components. Let's add a little for our base styles as well. Add a `styles` folder under `src` and move `index.css` inside it, ending up with this structure:
+    That's some structure for our components. Let's add a little for our base styles as well. Add a `styles` folder under `src` and move `index.css` inside it, ending up with this structure:
 
     ```
     - src
@@ -30,7 +30,7 @@ That's some structure for our components. Let's add a little for our base styles
             - index.css
     ```
 
-Don't forget to update the import statements for `index.css` in `index.tsx`!
+    Don't forget to update the import statements for `index.css` in `index.tsx`!
 
 3. Right, we are ready to create our first component. Remember that we're using TypeScript so there will a bit extra work to make sure our code is correctly typed and safe. Here's an example of how a simple, typed, Button component might look.
 
