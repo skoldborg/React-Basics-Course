@@ -62,13 +62,15 @@ Let's go!
     }
     ```
 
-5. We have a button! :tada: But it's looking kinda bleak. Let's remedy that by adding a bit of CSS. There are a lot of different approaches to styling components in React. We're going to start with plain 'ol vanilla CSS and then move on to something a bit more advanced (and a lot more powerful).
+5. We have a button! :tada: But it's looking kinda bleak. Let's remedy that by adding a bit of CSS. There are a lot of different approaches to styling components in React. We're going to start with plain 'ol vanilla CSS and then move on to something a bit more advanced (and a lot more powerful) later on.
 
     First off, grab the `reset.css` in the `resources` folder and put it into the `src` of your project. Then import it at the top of `index.tsx` in the same way as `index.css`.
 
     After that you are free to open up the link to the design in Figma and do your best to make your component match the design. Look under "Pages --> Library" for the actual component design as well as the colors used throughout the projects. You'll be reusing these colors a lot so it's a good idea to put them as CSS variables in the `index.css` file.
 
     The project uses the [Inconsolata](https://fonts.google.com/specimen/Inconsolata) font from Google Fonts. Find the font weights you need and load the font in `/public/index.html`.
+
+## Resources
 
 -   :books: Documentation
 
