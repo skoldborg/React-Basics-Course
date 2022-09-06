@@ -1,6 +1,6 @@
 [<img src="https://media.giphy.com/media/nPxVvyTWo1aIU/giphy.gif" alt="Styled Components" width="100%">](https://styled-components.com/)
 
-# 01 - CSS-in-JS with Styled Components
+# 02 - CSS-in-JS with Styled Components
 
 In this lesson we will get familiar with the concept of CSS-in-JS and more specifically [Styled Components](https://styled-components.com/).
 
