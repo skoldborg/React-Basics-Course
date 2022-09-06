@@ -42,7 +42,7 @@ In this lesson we will get familiar with the concept of CSS-in-JS and more speci
 
     Note: You should set a max-width to your `MovieCard` for now or it will be ginormous. We will control its width with a grid later on.
 
-5. This app is in need of a grid! For this we need two component; `<Row />` and `<Col />`. `Col` should accept its width as a prop. Here's how a grid with 5 columns per row should work:
+5. This app is in need of a grid! For this we need two components: `<Row />` and `<Col />`. `Col` should accept its width as a prop. Here's how a grid with 5 columns per row should work:
 
     ```tsx
     <Row>
