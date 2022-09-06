@@ -6,7 +6,7 @@ Time to make our Single Page Application support multiple pages! In todays lesso
 
 ## Assignments
 
-1. First off - installation. React Router is actually a monorepo (a repo that hold many repos) that consists of:
+1. First off - installation. React Router is actually a monorepo (a repo that holds many packages) that consists of:
 
     - [react-router-dom](https://github.com/remix-run/react-router/tree/main/packages/react-router-dom) - The browser version of React Router
     - [react-router-native](https://github.com/remix-run/react-router/tree/main/packages/react-router-native) - The React Native version of React Router
