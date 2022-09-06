@@ -18,11 +18,19 @@ Time to make our Single Page Application support multiple pages! In todays lesso
     npm i react-router-dom
     ```
 
+    And let's not forget the types:
+
+    ```sh
+    npm i -D @types/react-router-dom
+    ```
+
+2.
+
 ## Resources
 
 -   :books: Documentation
 
-    -   [React Router Tutorial](https://reactrouter.com/en/main/getting-started/tutorial)
+    -   [Getting started with React Router](https://reactrouter.com/en/v6.3.0/getting-started/overview)
 
     -   [The Link component](https://v5.reactrouter.com/web/api/Link)
 
