@@ -40,7 +40,7 @@ Time to make our Single Page Application support multiple pages! In todays lesso
 
 3. We're ready to add some routes. `App.tsx` will be the entry point for our router. Follow this [guide](https://reactrouter.com/en/v6.3.0/getting-started/overview) and see if you can get it working!
 
-4. Just one thing left - links. Looking at the Figma design there's a link to the movies page on our start page. The link looks an awful lot like our `Button` component, but a button element _should not be used for links_.
+4. That's the router, now let's add some links. Looking at the Figma design there's a link to the movies page on our start page. The link looks an awful lot like our `Button` component, but a button element _should not be used for links_.
 
     Create a new `ButtonLink` component that uses the same styles as `Button` but is a styled `Link` from `react-router-dom`, rather than a button element. Using `Link` in your styled component is as easy as:
 
@@ -52,7 +52,29 @@ Time to make our Single Page Application support multiple pages! In todays lesso
     `;
     ```
 
-    See if you can't figure out how to get the props for React router's `Link` to be a part of your `ButtonLink`.
+    See if you can't figure out how to get the props for React router's `Link` to be a part of your `ButtonLink` (Hint: They're named `LinkProps`).
+
+5. So now our users can navigate from the start page to the movies page. But then they're stuck :pensive:. Let's remedy that and at the same time expand on the look and feel of our app.
+
+    In the Figma design there's a logo at the top of the page that's always there. That logo will be our users link to the start page.
+
+    Create a `Header` and a `Logo` component. The `Header` component should just hold our `Logo` for now, and the `Logo` is just an image wrapped in a `Link`.
+
+    Normally a header component would be rendered outside of the `Routes` so it doesn't have to rerender on every URL change, but this header varies between pages so we'll just render it at the top of both of them. Example:
+
+    ```tsx
+    function StartPage() {
+        return (
+            <>
+                <Header />
+                <Wrapper>
+                    <h1>We'll Always Have Film</h1>
+                    <ButtonLink to="/movies">Till utbudet</ButtonLink>
+                </Wrapper>
+            </>
+        );
+    }
+    ```
 
 ## Resources
 
