@@ -1,4 +1,4 @@
-[<img src="https://media.giphy.com/media/xh7Nhs6PlOThC/giphy.gif" alt="State as memory" width="100%">](https://reactjs.org/)
+[<img src="https://media.giphy.com/media/xh7Nhs6PlOThC/giphy.gif" alt="State as memory" width="100%">](https://reactjs.org/docs/hooks-state.html)
 
 # 03 - State
 
@@ -24,27 +24,23 @@ In this lesson we will unlock what is probably the most powerful feature in Reac
                 index.tsx
     ```
 
+    Note: You can import and render your `Rating` component straight inside `MovieCard`.
+
 2. Got your styled rating component ready? Great! Let's give it some state and allow users to set their own rating.
 
     In your component, declare a new state using [hooks](https://reactjs.org/docs/hooks-reference.html). Let's call it `rating`. Set its default value to `0`.
 
     Now, when a user clicks on a star you should update the state with an integer that represents the rating. So if I click on star number 3 the state should be set to... `3`. Then make it so that that star and those before it are filled in, so the user gets some feedback on their interaction.
 
+3. **Bonus** If you have some extra time on your hands then go ahead and grab some more posters from the `resources` folder in the previous lesson and render out a little grid in `App.tsx`. Make sure that users can rate movies individually.
+
 ## Resources
 
 -   :books: Documentation
 
-    -   [ReactJS](https://reactjs.org/docs/getting-started.html)
-
     -   [State and lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 
-    -   [Introducing hooks](https://reactjs.org/docs/hooks-intro.html)
-
     -   [State hook](https://reactjs.org/docs/hooks-state.html)
-
--   :link: Links
-
-    -   [A guide to useState in React](https://blog.logrocket.com/a-guide-to-usestate-in-react-ecb9952e406c/)
 
 -   :headphones: Videos
 
