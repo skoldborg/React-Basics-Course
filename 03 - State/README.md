@@ -46,5 +46,5 @@ In this lesson we will unlock what is probably the most powerful feature in Reac
 
     -   [React.useState()](https://www.youtube.com/watch?v=O6P86uwfdR0)
 
--   :painter: Design
+-   :art: Design
     -   [Figma project](https://www.figma.com/file/m37G0gJ3VjICyGLGTWsxyh/FE-Edu-Challenge---2022?node-id=2%3A122).
