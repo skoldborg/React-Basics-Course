@@ -24,7 +24,35 @@ Time to make our Single Page Application support multiple pages! In todays lesso
     npm i -D @types/react-router-dom
     ```
 
-2.
+2. Next we will need to do some restructuring. `App.tsx` will be the entry point for our router and we want to support multiple pages, so let's create a `pages` folder under `src` and add a `MoviePage` component. Like this:
+
+    ```
+    - src
+        - components
+        - pages
+            - MoviePage
+                index.tsx
+    ```
+
+    Then move all of the code inside `App.tsx` to `MoviePage` (don't forget to rename the component).
+
+    And finally let's create a `StartPage` component so our users have somewhere to land. This page can just be a `<h1>` with our app's title for now ("We'll Always Have Film").
+
+3. We're ready to add some routes. `App.tsx` will be the entry point for our router. Follow this [guide](https://reactrouter.com/en/v6.3.0/getting-started/overview) and see if you can get it working!
+
+4. Just one thing left - links. Looking at the Figma design there's a link to the movies page on our start page. The link looks an awful lot like our `Button` component, but a button element _should not be used for links_.
+
+    Create a new `ButtonLink` component that uses the same styles as `Button` but is a styled `Link` from `react-router-dom`, rather than a button element. Using `Link` in your styled component is as easy as:
+
+    ```tsx
+    import { Link } from "react-router-dom";
+
+    const ButtonLinkStyled = styled(Link)`
+        // Styles go here
+    `;
+    ```
+
+    See if you can't figure out how to get the props for React router's `Link` to be a part of your `ButtonLink`.
 
 ## Resources
 
