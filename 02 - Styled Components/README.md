@@ -2,7 +2,7 @@
 
 # 01 - CSS-in-JS with Styled Components
 
-In this lesson we will get familiar with the concept of CSS-in-JS and more specifically, [Styled Components](https://styled-components.com/).
+In this lesson we will get familiar with the concept of CSS-in-JS and more specifically [Styled Components](https://styled-components.com/).
 
 ## Assignments
 
@@ -18,9 +18,50 @@ In this lesson we will get familiar with the concept of CSS-in-JS and more speci
     npm install -D @types/styled-components
     ```
 
-2. Go to your existing Button component and replace the `Button.css` file with a styled component (you can delete the `.css` file). The style declarations can be copied as is (without the class names) and features such as nesting and pseudo selectors will work out of the box!
+2. Go to your existing Button component and replace the CSS with a styled component (you can delete the `.css` file). The style declarations can be copied as is (without the class names) and features such as nesting and pseudo selectors will work out of the box!
 
     You can write your styled component straight inside `Button/index.tsx`, no need for second file just for styles (in this case).
+
+3. One of the most powerful features of a styled component is that it accepts props which can then be used to set and update the styles.
+
+    Add prop boolean called `inverted` to the Button's interface and pass it to the styled component. The prop should be optional and if it's `true` it should turn the background color to black and the text color to yellow.
+
+    Test this out on your Button in `App.tsx`.
+
+4. Add a new component to your application, called `MovieCard`. The card should look like the movie cards in the Figma design (without the star rating for now) and accept these props:
+
+    - poster: string // The poster image src
+    - title: string // Title of the movie
+    - details: string // The movie details, eg "Flash Gordon, 120 min"
+
+    Grab the `assets` folder under /resources for this lesson and put them in your `src` folder. Then you can import one of the images from there to `App.tsx` and use it as your test image.
+
+    ```tsx
+    import poster from "./assets/posters/flash-gordon.jpeg";
+    ```
+
+    Note: You should set a max-width to your `MovieCard` for now or it will be ginormous. We will control its width with a grid later on.
+
+5. This app is in need of a grid! For this we need two component; `<Row />` and `<Col />`. `Col` should accept its width as a prop. Here's how a grid with 5 columns per row should work:
+
+    ```tsx
+    <Row>
+        <Col width={1 / 5}></Col>
+        <Col width={1 / 5}></Col>
+        <Col width={1 / 5}></Col>
+        <Col width={1 / 5}></Col>
+        <Col width={1 / 5}></Col>
+    </Row>
+    ```
+
+    Use your newly created grid components to render a row with five `MovieCards` in `App.tsx`.
+
+6. **Bonus content** Done already? Well done you :clap: Use this time to extend your `Row` component. In order for it to support really usable grids you should be able to set the Flex properties `row-gap` and `grid-gap`. Set them as props and pass them to your styled component:
+
+    ```tsx
+    gridGap?: string // eg "16px"
+    rowGap?: string
+    ```
 
 ## Resources
 
