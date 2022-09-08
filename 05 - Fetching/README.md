@@ -64,7 +64,7 @@ In this final lesson we will finish up our movie database app. We'll add some se
 6. We have our query state hooked up and we can listen to when it updates. Time to fetch some movies!
 
     - Declare a new state, call it `movies`, and set it's initial value to `[]`. This will hold our movies once they're fetched.
-    - Declare a fetch method inside the `useEffect` function, here's a useful (guide)[https://devtrium.com/posts/async-functions-useeffect#note-on-fetching-data-inside-useeffect].
+    - Declare a fetch method inside the `useEffect` function, here's a useful [guide](https://devtrium.com/posts/async-functions-useeffect#note-on-fetching-data-inside-useeffect).
     - TMDB provides many (many) endpoints for their data. The endpoint for fetching movies by title looks like this:
       `https://api.themoviedb.org/3/search/movie?api_key=YOUR_API_KEY&language=en-US&query=MOVIE_TITLE&page=1`
     - Use your `searchInput`, `REACT_APP_TMDB_API_ENDPOINT`, and `REACT_APP_TMDB_API_KEY` variables to construct this URL.
