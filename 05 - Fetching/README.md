@@ -24,33 +24,28 @@ In this final lesson we will finish up our movie database app. We'll add some se
     REACT_APP_TMDB_API_KEY=YOUR_TMDB_API_KEY
     REACT_APP_TMDB_API_ENDPOINT=https://api.themoviedb.org/3
     REACT_APP_TMDB_IMAGE_ENDPOINT=https://image.tmdb.org/t/p/w500/
-
     ```
 
-    Now these three variables will be available to us anywhere in our application through the `process.env` object. Eg:
-
-    ```tsx
-    console.log(process.env.REACT_APP_TMDB_API_ENDPOINT);
-
-    // https://api.themoviedb.org/3
-    ```
+    Now these three variables will be available to us anywhere in our application through the `process.env` object (eg `process.env.REACT_APP_TMDB_API_ENDPOINT`).
 
 3. That's the setup taken care of, now let's build our search. First off, we need a search input to be able to provide a query to the API.
 
-    Create a `SearchInput` component. It should be a real input field of the type "search" and it should accept an `onChange` handler as a prop.
+    Create a `SearchInput` component in your `components` folder. It should be a real input field of the type "search" and it should accept an `onChange` handler as a prop.
 
-    Here's how it should look in the implementation
+    Here's how it should look in the implementation:
 
     ```tsx
     // file: MoviePage.tsx
     <Header>
-        <SearchInput onChange={(e) => setSearchInput(e.target.value)} />
+        <SearchInput onChange={(e) => console.log(e.target.value)} />
     </Header>
     ```
 
-    You can read more about how `onChange` handlers work [here](https://upmostly.com/tutorials/react-onchange-events-with-examples).
+    You can read more about how `onChange` handlers work [here](https://upmostly.com/tutorials/react-onchange-events-with-examples). If you've implemented the `SearchInput` correctly you should see the query string printed out in the console as you type in the input field.
 
     Extra points will be awarded to the dev that adds the correct TypeScript type to the `onChange` prop :wink:
+
+4.
 
 ## Resources
 
