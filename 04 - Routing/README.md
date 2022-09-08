@@ -36,9 +36,12 @@ Time to make our Single Page Application support multiple pages! In todays lesso
 
     Then move all of the code inside `App.tsx` to `MoviePage` (don't forget to rename the component).
 
-    And finally let's create a `StartPage` component so our users have somewhere to land. This page can just be a `<h1>` with our app's title for now ("We'll Always Have Film").
+    And finally let's create a `StartPage` component so our users have somewhere to land. The content of this page can just be a `<h1>` with our app's title for now ("We'll Always Have Film").
 
-3. We're ready to add some routes. `App.tsx` will be the entry point for our router. Follow this [guide](https://reactrouter.com/en/v6.3.0/getting-started/overview) and see if you can get it working!
+3. We're ready to add some routes. `App.tsx` will be the entry point for our router. Follow this [guide](https://reactrouter.com/en/v6.3.0/getting-started/overview) and see if you can get it working! When you're done, this is what should be possible:
+
+    - Going to `http:/localhost:3000/` should render the start page
+    - Going to `http:/localhost:3000/movies` should render the movie page
 
 4. That's the router, now let's add some links. Looking at the Figma design there's a link to the movies page on our start page. The link looks an awful lot like our `Button` component, but a button element _should not be used for links_.
 
