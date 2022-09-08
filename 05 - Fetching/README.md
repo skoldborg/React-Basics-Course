@@ -49,7 +49,8 @@ In this final lesson we will finish up our movie database app. We'll add some se
     ```
 
     You can read more about how `onChange` handlers work [here](https://upmostly.com/tutorials/react-onchange-events-with-examples).
-    Extra points will be awarded to the dev that add the correct TypeScript type to the `onChange` prop :wink:
+
+    Extra points will be awarded to the dev that adds the correct TypeScript type to the `onChange` prop :wink:
 
 ## Resources
 
