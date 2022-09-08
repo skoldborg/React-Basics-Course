@@ -56,15 +56,26 @@ In this final lesson we will finish up our movie database app. We'll add some se
     - Add a new new state, using [hooks](https://reactjs.org/docs/hooks-reference.html), to `MoviePage.tsx` called `searchInput`. Set its default value to an empty string.
     - Replace the `console.log` statement with your state hook.
 
-5. In order to read the value of `searchInput` as it updates we need something that listens to changes, or _effects_. Luckily there' a hook for that too!
+5. In order to read the value of `searchInput` as it updates we need something that listens to changes, or _effects_. Luckily there' a hook for that!
 
-    - Add a [useEffect hook](https://reactjs.org/docs/hooks-effect.html) underneath your state hook and add `searchInput` to its dependency array. `useEffect` will now run on mount (when the component is ready) and every time the `searchInput` state changes.
+    - Add a [useEffect hook](https://reactjs.org/docs/hooks-effect.html) below your state hook and add `searchInput` to its dependency array. `useEffect` will now run on mount (when the component is ready) and every time the `searchInput` state changes.
+    - Inside the useEffect hook we can just add a `console.log` for now. Check your console to see that it's working, you should get the same behaviour as when you had the log inside the `onChange` handler.
+
+6. We have our query state hooked up and we can listen to when it updates. Time to fetch some movies!
+
+    - Declare a new state, call it `movies`, and set it's initial value to `[]`. This will hold our movies once they're fetched.
+    - Declare a fetch method inside the `useEffect` function, here's a useful (guide)[https://devtrium.com/posts/async-functions-useeffect#note-on-fetching-data-inside-useeffect].
+    - TMDB provides many (many) endpoints for their data. The endpoint for fetching movies by title looks like this:
+      `https://api.themoviedb.org/3/search/movie?api_key=YOUR_API_KEY&language=en-US&query=MOVIE_TITLE&page=1`
+    - Use your `searchInput`, `REACT_APP_TMDB_API_ENDPOINT`, and `REACT_APP_TMDB_API_KEY` variables to construct this URL.
 
 ## Resources
 
 -   :books: Documentation
 
     -   [Using the useEffect hook](https://reactjs.org/docs/hooks-effect.html)
+
+    -   [Using the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
     -   [The Movie Database API docs](https://developers.themoviedb.org/3)
 
