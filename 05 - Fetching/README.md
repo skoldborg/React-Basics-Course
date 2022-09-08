@@ -35,7 +35,20 @@ In this final lesson we will finish up our movie database app. We'll add some se
     // https://api.themoviedb.org/3
     ```
 
-    > "https://api.themoviedb.org/3/"
+3. That's the setup taken care of, now let's build our search. First off, we need a search input to be able to provide a query to the API.
+
+    Create a `SearchInput` component. It should be a real input field of the type "search" and it should accept an `onChange` handler as a prop.
+
+    Here's how it should look in the implementation
+
+    ```tsx
+    // file: MoviePage.tsx
+    <Header>
+        <SearchInput onChange={(e) => setSearchInput(e.target.value)} />
+    </Header>
+    ```
+
+    You can read more about how `onChange` handlers work [here](https://upmostly.com/tutorials/react-onchange-events-with-examples).
 
 ## Resources
 
