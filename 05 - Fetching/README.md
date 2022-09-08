@@ -1,4 +1,4 @@
-[<img src="https://media.giphy.com/media/CAxbo8KC2A0y4/giphy.gif" width="100%">](https://reactrouter.com/)
+[<img src="https://media.giphy.com/media/XBEoaajXTXaALzawSn/giphy.gif" width="100%">](https://reactrouter.com/)
 
 # 05 - Fetching
 
@@ -76,7 +76,9 @@ In this final lesson we will finish up our movie database app. We'll add some se
     - Use [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) to [loop over](https://stackabuse.com/how-to-loop-in-react-jsx/) the movies in `MoviePage.tsx`'s render method. For each movie you should render a `<MovieCard />` and pass the relevant values as [props](https://reactjs.org/docs/components-and-props.html) to the component.
         > Note: We're getting a URL for our movie posters in the `poster` variable, but it's incomplete. Prepend your `REACT_APP_TMDB_IMAGE_ENDPOINT` to it to make the URL complete.
 
-8. **Extra:** We have working application :tada: But the designer is not happy :pensive: Use your Front End skillz to make your application match the design!
+8. **Extra:** Right now the app runs an empty query every time `MoviePage` loads. You can fix this by checking if `searchInput` is an empty string and only running the fetch _if_ it isn't. If `searchInput` is empty, you can set the `movies` state to an empty array, allowing our users to clear their search.
+
+9. **Extra:** We have working application! :tada: But the designer is not happy :pensive: Use your Front End skillz to make your application match the design!
 
 ## Resources
 
