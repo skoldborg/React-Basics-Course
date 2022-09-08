@@ -42,21 +42,21 @@ In this lesson we will get familiar with the concept of CSS-in-JS and more speci
 
     Note: You should set a max-width to your `MovieCard` for now or it will be ginormous. We will control its width with a grid later on.
 
-5. This app is in need of a grid! For this we need two components: `<Row />` and `<Col />`. `Col` should accept its width as a prop. Here's how a grid with 5 columns per row should work:
+5. This app is in need of a grid! We'll use CSS Grid for this. Create a `<Grid />` that takes the number of columns in the grid as a prop. Here's how a grid with 5 columns per row should work:
 
     ```tsx
-    <Row>
-        <Col width={1 / 5}></Col>
-        <Col width={1 / 5}></Col>
-        <Col width={1 / 5}></Col>
-        <Col width={1 / 5}></Col>
-        <Col width={1 / 5}></Col>
+    <Row columnCount={5}>
+        <MovieCard />
+        <MovieCard />
+        <MovieCard />
+        <MovieCard />
+        <MovieCard />
     </Row>
     ```
 
     Use your newly created grid components to render a row with five `MovieCards` in `App.tsx`.
 
-6. **Bonus content** Done already? Well done you :clap: Use this time to extend your `Row` component. In order for it to support really usable grids you should be able to set the Flex properties `row-gap` and `grid-gap`. Set them as props and pass them to your styled component:
+6. **Bonus content** Done already? Well done you :clap: Use this time to extend your `Grid` component. In order for it to be really powerful you should be able to set the CSS Grid properties `row-gap` and `grid-gap`. Set them as props and pass them to your styled component:
 
     ```tsx
     gridGap?: string // eg "16px"
