@@ -58,9 +58,9 @@ Time to make our Single Page Application support multiple pages! In todays lesso
 
     In the Figma design there's a logo at the top of the page that's always there. That logo will be our users link to the start page.
 
-    Create a `Header` and a `Logo` component. The `Header` component should just hold our `Logo` for now, and the `Logo` is just an image wrapped in a `Link`.
+    Create a `Header` and a `Logo` component. The `Logo`, which is just an image wrapped in a React Router `Link`, should go inside the `Header` component. See if you can export the image for the logo from Figma as an `svg`.
 
-    Normally a header component would be rendered outside of the `Routes` so it doesn't have to rerender on every URL change, but this header varies between pages so we'll just render it at the top of both of them. Example:
+    Normally a header component would be rendered outside of the `Routes` so it doesn't have to rerender on every URL change, but this header varies between pages so we'll just render it at the top of each page. Example:
 
     ```tsx
     function StartPage() {
