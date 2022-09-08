@@ -53,6 +53,13 @@ In this final lesson we will finish up our movie database app. We'll add some se
 
 4. Right, we can now get a search query from our users, but we're only logging it to the console. We need to add it to our app's state in order to use it.
 
+    - Add a new new state, using [hooks](https://reactjs.org/docs/hooks-reference.html), to `MoviePage.tsx` called `searchInput`. Set its default value to an empty string.
+    - Replace the `console.log` statement with your state hook.
+
+5. In order to read the value of `searchInput` as it updates we need something that listens to changes, or \*_effects_. Luckily there' a hook for that too!
+
+    - Add a [useEffect hook](https://reactjs.org/docs/hooks-effect.html) underneath your state hook and add `searchInput` to its dependency array. `useEffect` will now run on mount (when the component is ready) and every time the `searchInput` state changes.
+
 ## Resources
 
 -   :books: Documentation
