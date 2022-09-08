@@ -74,7 +74,9 @@ In this final lesson we will finish up our movie database app. We'll add some se
 7. Almost there! We can fetch movies based on our user's query and we have the result stored neatly in array. Now all that's left is to render it.
 
     - Use [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) to [loop over](https://stackabuse.com/how-to-loop-in-react-jsx/) the movies in `MoviePage.tsx`'s render method. For each movie you should render a `<MovieCard />` and pass the relevant values as [props](https://reactjs.org/docs/components-and-props.html) to the component.
-        > Note: We're getting a URL for our movie posters in the `poster` variable, but it's incomplete. Add your `REACT_APP_TMDB_IMAGE_ENDPOINT` to the beginning to make it complete.
+        > Note: We're getting a URL for our movie posters in the `poster` variable, but it's incomplete. Prepend your `REACT_APP_TMDB_IMAGE_ENDPOINT` to it to make the URL complete.
+
+8. **Extra** We have working application :tada: But the designer is not happy :pensive: Use your Front End skillz to make your application match the design!
 
 ## Resources
 
