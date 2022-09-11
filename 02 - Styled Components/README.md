@@ -56,10 +56,10 @@ In this lesson we will get familiar with the concept of CSS-in-JS and more speci
 
     Use your newly created grid components to render a row with five `MovieCards` in `App.tsx`.
 
-6. **Bonus content** Done already? Well done you :clap: Use this time to extend your `Grid` component. In order for it to be really powerful you should be able to set the CSS Grid properties `row-gap` and `grid-gap`. Set them as props and pass them to your styled component:
+6. **Bonus content** Done already? Well done you :clap: Use this time to extend your `Grid` component. In order for it to be really powerful you should be able to set the CSS Grid properties `row-gap` and `column-gap`. Set them as props and pass them to your styled component:
 
     ```tsx
-    gridGap?: string // eg "16px"
+    columnGap?: string // eg "16px"
     rowGap?: string
     ```
 
