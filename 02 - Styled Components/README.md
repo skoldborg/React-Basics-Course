@@ -45,13 +45,13 @@ In this lesson we will get familiar with the concept of CSS-in-JS and more speci
 5. This app is in need of a grid! We'll use CSS Grid for this. Create a `<Grid />` that takes the number of columns in the grid as a prop. Here's how a grid with 5 columns per row should work:
 
     ```tsx
-    <Row columnCount={5}>
+    <Grid columnCount={5}>
         <MovieCard />
         <MovieCard />
         <MovieCard />
         <MovieCard />
         <MovieCard />
-    </Row>
+    </Grid>
     ```
 
     Use your newly created grid components to render a row with five `MovieCards` in `App.tsx`.
