@@ -6,7 +6,7 @@ In this lesson we will get familiar with the concept of CSS-in-JS and more speci
 
 ## Assignments
 
-1. In order to use Styled Components we need to install it. Run this in your terminal (yarn or npm depending on preference):
+1. In order to use Styled Components we need to install it. Run this in your terminal:
 
     ```sh
     npm install styled-components
