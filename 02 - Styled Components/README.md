@@ -1,4 +1,4 @@
-[<img src="https://media.giphy.com/media/nPxVvyTWo1aIU/giphy.gif" alt="Styled Components" width="100%">](https://styled-components.com/)
+[<img src="https://media.giphy.com/media/MURsKMKVsVgXu/giphy.gif" alt="Styled Components" width="100%">](https://styled-components.com/)
 
 # 02 - CSS-in-JS with Styled Components
 
