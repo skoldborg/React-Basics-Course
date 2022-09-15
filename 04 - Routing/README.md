@@ -67,6 +67,7 @@ Time to make our Single Page Application support multiple pages! In todays lesso
     // Header/index.tsx
     <HeaderStyled>
         <Logo />
+        {props.children}
     </HeaderStyled>
     ```
 
