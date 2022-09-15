@@ -80,7 +80,7 @@ Time to make our Single Page Application support multiple pages! In todays lesso
                 <Header />
                 <Wrapper>
                     <h1>We'll Always Have Film</h1>
-                    <ButtonLink to="/movies">Till utbudet</ButtonLink>
+                    <Button to="/movies">Till utbudet</Button>
                 </Wrapper>
             </>
         );
