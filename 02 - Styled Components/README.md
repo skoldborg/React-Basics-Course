@@ -1,4 +1,4 @@
-[<img src="https://media.giphy.com/media/nPxVvyTWo1aIU/giphy.gif" alt="Styled Components" width="100%">](https://styled-components.com/)
+[<img src="https://media.giphy.com/media/MURsKMKVsVgXu/giphy.gif" alt="Styled Components" width="100%">](https://styled-components.com/)
 
 # 02 - CSS-in-JS with Styled Components
 
@@ -6,7 +6,7 @@ In this lesson we will get familiar with the concept of CSS-in-JS and more speci
 
 ## Assignments
 
-1. In order to use Styled Components we need to install it. Run this in your terminal (yarn or npm depending on preference):
+1. In order to use Styled Components we need to install it. Run this in your terminal:
 
     ```sh
     npm install styled-components
@@ -24,7 +24,7 @@ In this lesson we will get familiar with the concept of CSS-in-JS and more speci
 
 3. One of the most powerful features of a styled component is that it accepts props which can then be used to set and update the styles.
 
-    Add prop boolean called `inverted` to the Button's interface and pass it to the styled component. The prop should be optional and if it's `true` it should turn the background color to black and the text color to yellow.
+    Add boolean prop called `inverted` to the Button's interface and pass it to the styled component. The prop should be optional and if it's `true` it should turn the background color to black and the text color to yellow.
 
     Test this out on your Button in `App.tsx`.
 
@@ -45,13 +45,13 @@ In this lesson we will get familiar with the concept of CSS-in-JS and more speci
 5. This app is in need of a grid! We'll use CSS Grid for this. Create a `<Grid />` that takes the number of columns in the grid as a prop. Here's how a grid with 5 columns per row should work:
 
     ```tsx
-    <Row columnCount={5}>
+    <Grid columnCount={5}>
         <MovieCard />
         <MovieCard />
         <MovieCard />
         <MovieCard />
         <MovieCard />
-    </Row>
+    </Grid>
     ```
 
     Use your newly created grid components to render a row with five `MovieCards` in `App.tsx`.
