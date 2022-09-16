@@ -43,9 +43,9 @@ Time to make our Single Page Application support multiple pages! In todays lesso
     - Going to `http:/localhost:3000/` should render the start page
     - Going to `http:/localhost:3000/movies` should render the movie page
 
-4. That's the router, now let's add some links. Looking at the Figma design there's a link to the movies page on our start page. The link looks an awful lot like our `Button` component, but a button element _should not be used for links_.
+4. That's the router, now let's add some links. Looking at the Figma design there's a link to the movies page on our start page. The link looks an awful lot like our `Button` component. Right now though that `Button` component is a HTML `<a>` tag, which won't work with React Router. React Router uses its own component for linking between pages, called `Link`.
 
-    Create a new `ButtonLink` component that uses the same styles as `Button` but is a styled `Link` from `react-router-dom`, rather than a button element. Using `Link` in your styled component is as easy as:
+    Update your `Button` so that it uses `Link`. Using `Link` in your styled component is as easy as:
 
     ```tsx
     import { Link } from "react-router-dom";
@@ -55,13 +55,21 @@ Time to make our Single Page Application support multiple pages! In todays lesso
     `;
     ```
 
-    See if you can't figure out how to get the props for React router's `Link` to be a part of your `ButtonLink` (Hint: They're named `LinkProps`).
+    See if you can't figure out how to get the props for React router's `Link` to be a part of your `ButtonProps` (Hint: They're named `LinkProps`).
 
 5. So now our users can navigate from the start page to the movies page. But then they're stuck :pensive:. Let's remedy that and at the same time expand on the look and feel of our app.
 
     In the Figma design there's a logo at the top of the page that's always there. That logo will be our users link to the start page.
 
     Create a `Header` and a `Logo` component. The `Logo`, which is just an image wrapped in a React Router `Link`, should go inside the `Header` component. See if you can export the image for the logo from Figma as an `svg`.
+
+    ```tsx
+    // Header/index.tsx
+    <HeaderStyled>
+        <Logo />
+        {props.children}
+    </HeaderStyled>
+    ```
 
     Normally a header component would be rendered outside of the `Routes` so it doesn't have to rerender on every URL change, but this header varies between pages so we'll just render it at the top of each page. Example:
 
@@ -72,7 +80,7 @@ Time to make our Single Page Application support multiple pages! In todays lesso
                 <Header />
                 <Wrapper>
                     <h1>We'll Always Have Film</h1>
-                    <ButtonLink to="/movies">Till utbudet</ButtonLink>
+                    <Button to="/movies">Till utbudet</Button>
                 </Wrapper>
             </>
         );
