@@ -86,6 +86,8 @@ In this final lesson we will finish up our movie database app. We'll add some se
 
     -   [Using the useEffect hook](https://reactjs.org/docs/hooks-effect.html)
 
+    -   [Rules of hooks](https://reactjs.org/docs/hooks-rules.html)
+
     -   [Using the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
     -   [The Movie Database API docs](https://developers.themoviedb.org/3)
